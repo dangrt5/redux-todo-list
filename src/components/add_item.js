@@ -19,7 +19,6 @@ class AddItem extends React.Component {
   }
 
   saveItem = async (values) => {
-    console.log("Values", values);
     await this.props.addListItem(values);
     this.props.history.push('/');
   }
